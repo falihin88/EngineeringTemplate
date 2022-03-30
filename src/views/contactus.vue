@@ -20,6 +20,12 @@
                         {{ item.email }}
                       </dd>
                     </div>
+                    <div>
+                      <dt class="sr-only">Email</dt>
+                      <dd>
+                        {{ item.address }}
+                      </dd>
+                    </div>
                     <div class="mt-1">
                       <dt class="sr-only">Phone number</dt>
                       <dd>
@@ -38,28 +44,7 @@
       </div>
 
       <!-- FAQ -->
-      <div class="bg-warm-gray-50">
-        <div class="max-w-md mx-auto py-24 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-            <div>
-              <h2 class="text-3xl font-extrabold text-warm-gray-900">Frequently asked questions</h2>
-              <p class="mt-4 text-lg text-warm-gray-500">Can’t find the answer you’re looking for? Reach out to our <a href="#" class="font-medium text-cyan-700 hover:text-cyan-600">customer support</a> team.</p>
-            </div>
-            <div class="mt-12 lg:mt-0 lg:col-span-2">
-              <dl class="space-y-12">
-                <div v-for="faq in faqs" :key="faq.id">
-                  <dt class="text-lg font-medium text-warm-gray-900">
-                    {{ faq.question }}
-                  </dt>
-                  <dd class="mt-2 text-base text-warm-gray-500">
-                    {{ faq.answer }}
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </div></main>
+      </main>
     </div>
 </template>
 <script>
@@ -68,10 +53,11 @@ import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
 const contactDetails = [
-  { name: 'Collaborate', email: 'support@example.com', telephone: '+1 (555) 123-4567' },
-  { name: 'Press', email: 'support@example.com', telephone: '+1 (555) 123-4567' },
-  { name: 'Join our team', email: 'support@example.com', telephone: '+1 (555) 123-4567' },
-  { name: 'Say hello', email: 'support@example.com', telephone: '+1 (555) 123-4567' },
+  { name: 'Email', email: 'support@example.com', },
+  { name: 'Phone', telephone: '0468995555' },
+  { name: 'Address', address: '42332313/dawr' },
+
+ 
 ]
 
 const faqs = [

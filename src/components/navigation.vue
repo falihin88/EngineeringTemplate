@@ -58,11 +58,11 @@
               <div>
                 
                 <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-blue-900 sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
-                  <span class="md:block uppercase ">Structural Engineering</span>
+                  <span class="md:block uppercase ">{{home.header.bigTitle1}}</span>
                   {{ ' ' }}
-                  <span class="text-white md:block uppercase">Services</span>
+                  <span class="text-white md:block uppercase">{{home.header.bigTitle2}}</span>
                 </h1>
-                <p class="mt-3 text-base md:text-gray-100 text-gray-50sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light">ISRA provides engineering consultancy to our client in the area of building safety, security enforcement and building certification</p>
+                <p class="mt-3 text-base md:text-gray-100 text-gray-50sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light">{{home.header.description}}</p>
                  <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm text-white border-white border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :to="'/about'">About Us</router-link>
                   <router-link  class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm bg-blue-900 text-white ml-2 p-4 border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-white" :to="'/ourwork'">Our Work</router-link>
                
@@ -92,7 +92,7 @@
         <div class="mx-auto max-w-7xl">
            <div class="relative mt-24 max-w-md mx-auto px-4 sm:max-w-3xl sm:mt-32 sm:px-6 lg:max-w-7xl lg:px-8">
         <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">About Us</h1>
-        <p class="mt-6 text-xl text-cyan-100 max-w-3xl">Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut consectetur. Sit justo viverra non adipisicing elit distinctio.</p>
+        <p class="mt-6 text-xl text-cyan-100 max-w-3xl">{{home.about.description}}</p>
       <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm text-white border-white border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :to="'/about#information'">Read More</router-link>
       </div>
          
@@ -105,8 +105,8 @@
       <main class="mt-16 sm:mt-24">
         <div class="mx-auto max-w-7xl">
           <div class="relative mt-24 max-w-md mx-auto px-4 sm:max-w-3xl sm:mt-32 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">What We Specialised</h1>
-        <p class="mt-6 text-xl text-cyan-100 max-w-3xl">Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut consectetur. Sit justo viverra non adipisicing elit distinctio.</p>
+        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">{{home.ourwork.header}}</h1>
+        <p class="mt-6 text-xl text-cyan-100 max-w-3xl">{{home.ourwork.description}}</p>
       </div>
         </div>
       </main>
@@ -117,8 +117,8 @@
       <main class="mt-16 sm:mt-24">
         <div class="mx-auto max-w-7xl">
            <div class="relative mt-24 max-w-md mx-auto px-4 sm:max-w-3xl sm:mt-32 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Contact us</h1>
-        <p class="mt-6 text-xl text-cyan-100 max-w-3xl">Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut consectetur. Sit justo viverra non adipisicing elit distinctio.</p>
+        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">{{home.contactus.header}}</h1>
+        <p class="mt-6 text-xl text-cyan-100 max-w-3xl">{{home.contactus.description}}</p>
       
       </div>
          
@@ -141,6 +141,28 @@ const navigation = [
   { name: 'Contact us', href: '/contactus' },
 ]
 
+const home = 
+      {
+        header: {
+          bigTitle1: "Structural Engineering",
+          bigTitle2: "Services",
+          description: "ISRA provides engineering consultancy to our client in the area of building safety, security enforcement and building certification"
+        },
+        about: {
+          description: "this this about description"
+        },
+
+        ourwork: {
+          description:"Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut consectetur. Sit justo viverra non adipisicing elit distinctio.",
+          header: "What We Specialised"
+        },
+
+        contactus:{
+          description:"Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut consectetur. Sit justo viverra non adipisicing elit distinctio.",
+          header:"Contact us"
+        }
+      }
+
 export default {
   components: {
     Popover,
@@ -151,8 +173,12 @@ export default {
     XIcon,
   },
   setup() {
+
+    
+    
     return {
       navigation,
+      home
     }
   },
 }

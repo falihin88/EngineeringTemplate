@@ -1,4 +1,4 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
+
 <template>
   <div class="py-16 bg-gray-50 overflow-hidden lg:py-24">
     <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
@@ -12,14 +12,14 @@
       </svg>
 
       <div class="relative">
-        <h2 class="text-center uppercase text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl ">Your safety, our top priority</h2>
+        <h2 class="text-center uppercase text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl ">{{text.header1}}</h2>
         
       </div>
 
       <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
         <div class="relative">
-          <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl uppercase">ISRA is committed to safety</h3>
-          <p class="mt-3 text-lg text-gray-500">Utilising solid engineering foundation coupled with latest technological innovation, we are confident that we can benefit you in many ways.</p>
+          <h3 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl uppercase">{{text.header2}}</h3>
+          <p class="mt-3 text-lg text-gray-500">{{text.para}}</p>
 
           <dl class="mt-10 space-y-10">
             <div v-for="item in transferFeatures" :key="item.id" class="relative">
@@ -55,34 +55,17 @@
     </div>
     
   </div>
-  <div class="relative mb-10">
-      <div class="absolute inset-0 flex flex-col" aria-hidden="true">
-        <div class="flex-1 bg-gray-50" />
-        <div class="flex-1" />
-      </div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-r from-green-400 to-green-500 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
-          <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-            <div class="lg:self-center">
-              <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                <span class="block">Ready to dive in?</span>
-                <span class="block text-blue-900">Start your free trial today.</span>
-              </h2>
-              <p class="mt-4 text-lg leading-6 text-orange-50">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
-              <a href="#" class="mt-8 bg-orange-100 border border-transparent rounded-md shadow py-3 px-6 inline-flex items-center text-base font-medium text-red-600 hover:text-red-500">Sign up for free</a>
-            </div>
-          </div>
-          <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-            <img class="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg" alt="App screenshot" />
-          </div>
-        </div>
-      </div>
-    </div>
+  
 </template>
 
 <script>
 import { AnnotationIcon,ExternalLinkIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon, AcademicCapIcon } from '@heroicons/vue/outline'
 
+const text = {
+  header1:"YOUR SAFETY, OUR TOP PRIORITY",
+  header2: "ISRA IS COMMITTED TO SAFETY",
+  para: "Utilising solid engineering foundation coupled with latest technological innovation, we are confident that we can benefit you in many ways."
+}
 const transferFeatures = [
   {
     id: 1,
@@ -106,22 +89,6 @@ const transferFeatures = [
     icon: LightningBoltIcon,
   },
 ]
-const communicationFeatures = [
-  {
-    id: 1,
-    name: 'Mobile notifications',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: AnnotationIcon,
-  },
-  {
-    id: 2,
-    name: 'Reminder emails',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: MailIcon,
-  },
-]
 
 export default {
     components: {
@@ -130,7 +97,7 @@ export default {
   setup() {
     return {
       transferFeatures,
-      communicationFeatures,
+      text
     }
   },
 }

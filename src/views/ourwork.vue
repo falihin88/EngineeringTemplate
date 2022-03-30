@@ -24,6 +24,8 @@
 </template>
 <script>
 import Navigation from '../components/navigation.vue'
+
+
 const features = [
   {
     name: 'Building Safety',
