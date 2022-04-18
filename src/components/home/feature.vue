@@ -49,7 +49,25 @@
         </div>
       </div>
 
-     
+     <div class="bg-white">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div class="bg-green-500 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
+        <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+          <div class="lg:self-center">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+              <span class="block">Ready to dive in?</span>
+              <span class="block text-indigo-700">Contact Us for a free first Consultation</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-indigo-200"></p>
+            <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm text-white border-white border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :to="'/contactus'">Contact Us</router-link>
+          </div>
+        </div>
+        <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+          <img class="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="https://images.unsplash.com/photo-1469389335181-2198b4caa734?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNTg1OTQwNg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="App screenshot" />
+        </div>
+      </div>
+    </div>
+  </div>
 
       
     </div>
@@ -62,30 +80,30 @@
 import { AnnotationIcon,ExternalLinkIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon, AcademicCapIcon } from '@heroicons/vue/outline'
 
 const text = {
-  header1:"YOUR SAFETY, OUR TOP PRIORITY",
-  header2: "ISRA IS COMMITTED TO SAFETY",
-  para: "Utilising solid engineering foundation coupled with latest technological innovation, we are confident that we can benefit you in many ways."
+  header1:"",
+  header2: "SAFETY & SUSTAINABILITY",
+  para: "Utilising in-house capability and in collaboration with our long term associates in multi-national firms we will drive your programs"
 }
 const transferFeatures = [
   {
     id: 1,
-    name: 'Expert in the field',
+    name: 'Expertise',
     description:
-      'Our consultant has proven track record to deliver your project in timely manner and our experts are verified',
+      'Our Engineers with proven track record will deliver via review, injecting technology and innovation.',
     icon: AcademicCapIcon,
   },
   {
     id: 2,
-    name: 'No hidden fees',
+    name: 'Technology',
     description:
-      'We value honesty as best as you do. So, rest assured we ......',
+      'Latest evidence based technology that will surely wowed our clients',
     icon: ScaleIcon,
   },
   {
     id: 3,
-    name: 'Instant Quote',
+    name: 'Innovation',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Constanly innovating our solutions to give the best to our clients',
     icon: LightningBoltIcon,
   },
 ]

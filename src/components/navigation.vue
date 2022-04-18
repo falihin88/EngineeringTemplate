@@ -63,6 +63,14 @@
                   <span class="text-white md:block uppercase">{{home.header.bigTitle2}}</span>
                 </h1>
                 <p class="mt-3 text-base md:text-gray-100 text-gray-50sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light">{{home.header.description}}</p>
+                <p class="mt-3 text-base md:text-gray-100 text-gray-50sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light"> 
+                  <ul class=" list-disc ml-10">
+                  <li>Pre-feasibility</li>
+                  <li>Design and Documentation</li>
+                  <li>Inspections and Certification</li>
+                </ul>
+                </p>
+
                  <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm text-white border-white border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :to="'/about'">About Us</router-link>
                   <router-link  class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm bg-blue-900 text-white ml-2 p-4 border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-white" :to="'/ourwork'">Our Work</router-link>
                
@@ -144,17 +152,17 @@ const navigation = [
 const home = 
       {
         header: {
-          bigTitle1: "Structural Engineering",
-          bigTitle2: "Services",
-          description: "ISRA provides engineering consultancy to our client in the area of building safety, security enforcement and building certification"
+          bigTitle1: "Structural Civil Mining ",
+          bigTitle2: "Engineering Services",
+          description: "ISRA  provides professional project services of:"
         },
         about: {
           description: "this this about description"
         },
 
         ourwork: {
-          description:"Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut consectetur. Sit justo viverra non adipisicing elit distinctio.",
-          header: "What We Specialised"
+          description:"",
+          header: "Our Work"
         },
 
         contactus:{
