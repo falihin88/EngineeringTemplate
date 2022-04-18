@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="mt-12 border-t border-gray-200 pt-8">
-        <p class="text-base text-gray-400 xl:text-center">&copy; {{year}} ISRA Engineering. All rights reserved.</p>
+        <p class="text-base text-gray-400 xl:text-center">&copy; {{year}} ISRA Engineering. All rights reserved. Designed By MFA</p>
       </div>
     </div>
   </footer>
