@@ -157,7 +157,7 @@ const home =
           description: "ISRA  provides professional project services of:"
         },
         about: {
-          description: "this this about description"
+          description: "Our Engineers have delivered in landmark project in Australia, New Zealand, South East Asia and the Pacific. "
         },
 
         ourwork: {
@@ -166,7 +166,7 @@ const home =
         },
 
         contactus:{
-          description:"Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut consectetur. Sit justo viverra non adipisicing elit distinctio.",
+          description:"",
           header:"Contact us"
         }
       }

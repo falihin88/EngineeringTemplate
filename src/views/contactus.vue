@@ -43,7 +43,8 @@
         
       </div>
 
-      <!-- FAQ -->
+      <!-- Image -->
+        
       </main>
     </div>
 </template>

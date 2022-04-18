@@ -34,25 +34,8 @@
             </defs>
             <rect width="404" height="384" fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)" />
           </svg>
-          <blockquote class="relative bg-white rounded-lg shadow-lg">
-            <div class="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
-             
-              <div class="relative text-lg text-gray-700 font-medium mt-8">
-                <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
-                <p class="relative">{{testimonial.description}}</p>
-              </div>
-            </div>
-            <cite class="relative flex items-center sm:items-start bg-indigo-600 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
-              
-              <span class="relative ml-4 text-indigo-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
-                <p class="text-white font-semibold sm:inline">{{testimonial.personName}}</p>
-                {{ ' ' }}
-                <p class="sm:inline">{{testimonial.personTitle}}</p>
-              </span>
-            </cite>
-          </blockquote>
+          <img class=" relative rounded-md shadow-lg" src="https://images.unsplash.com/photo-1522775559573-2f76d540932b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzODM2NTcwMQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="">
+          
         </div>
       </div>
     </div>
@@ -64,7 +47,7 @@ import Navigation from '../components/navigation.vue'
 // add more paragraph by adding more mpara[n] n is number.
 const About = {
   header1: "What makes us different",
-  smallPara: " Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque",
+  smallPara: " Every project throws unique challenges and our Engineers need to dwell upon experience and expertise for an optimum solution.  ",
   multiPara: {
     mpara: "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.",
     mpara2: "Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi."
@@ -73,9 +56,9 @@ const About = {
 }
 
 const testimonial = {
-  personName: "Mr Beshir",
-  personTile: "CEO of Beshir Institute",
-  description: " I am pleased to have this testimonial."
+  personName: "",
+  personTile: "",
+  description: " "
 }
 
 export default {
