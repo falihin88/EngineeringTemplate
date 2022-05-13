@@ -54,9 +54,9 @@ import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
 const contactDetails = [
-  { name: 'Email', email: 'support@example.com', },
-  { name: 'Phone', telephone: '0468995555' },
-  { name: 'Address', address: '42332313/dawr' },
+  { name: 'Email', email: 'israengineersminers@gmail.com', },
+  { name: 'Phone', telephone: '+61 (0)450 783 264' },
+  { name: 'Address', address: '151 Burbong Street, Chapel Hill QLD 4069' },
 
  
 ]

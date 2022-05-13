@@ -12,13 +12,15 @@
       </div>
       <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
         <div class="relative z-10">
-          <div class="prose prose-indigo text-gray-500 mx-auto lg:max-w-none" v-for="para in About.multiPara" :key="para">
-            <p class="mt-2 text-black text-base">{{para}}</p>
+          <div class="prose prose-indigo text-gray-500 mx-auto lg:max-w-none" >
+            <p class="mt-2 text-black text-base">Studies and Pre-feasibility Reports</p>
+            <p class="mt-2 text-black text-base">Innovative Design & Documentation</p>
+            <p class="mt-2 text-black text-base">Compliance Inspections, Controls & Certification</p>
           </div>
           <div class="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
            
                <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm text-blue-900 border-blue-900 border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :to="'/contactus'">contact us</router-link>
-                  <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm bg-blue-900 text-white ml-2 p-4 border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-white" :to="'/ourwork'">Our Work</router-link>
+                  <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm bg-blue-900 text-white ml-2 p-4 border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-white" :to="'/ourwork'">Our Expertise</router-link>
             
             
               
@@ -48,11 +50,7 @@ import Navigation from '../components/navigation.vue'
 const About = {
   header1: "What makes us different",
   smallPara: " Every project throws unique challenges and our Engineers need to dwell upon experience and expertise for an optimum solution.  ",
-  multiPara: {
-    mpara: "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.",
-    mpara2: "Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi."
-
-  }
+  
 }
 
 const testimonial = {

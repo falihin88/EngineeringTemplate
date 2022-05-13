@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/about.vue'
 import OurWork from '../views/ourwork.vue'
 import ContactUs from '../views/contactus.vue'
+import partnership from '../views/partnership.vue'
 
 
 const history = createWebHistory();
@@ -10,8 +11,9 @@ const routes = [
   { path: "/", component: Home, name: 'Home' },
   { path: "/about", component: About, name: 'About' },
   { path: "/about#information", component: About, name: 'AboutInformation' },
-  { path: "/ourwork", component: OurWork, name: 'ourwork' },
+  { path: "/ourexpertise", component: OurWork, name: 'ourwork' },
   { path: "/contactus", component: ContactUs, name: 'contactus' },
+  { path: "/partnership", component: partnership, name: 'partnership'}
 ];
 
 

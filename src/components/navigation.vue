@@ -65,24 +65,25 @@
                 <p class="mt-3 text-base md:text-gray-100 text-gray-50sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light">{{home.header.description}}</p>
                 <p class="mt-3 text-base md:text-gray-100 text-gray-50sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light"> 
                   <ul class=" list-disc ml-10">
-                  <li>Pre-feasibility</li>
-                  <li>Design and Documentation</li>
-                  <li>Inspections and Certification</li>
+                  <li>Provision via digital technologies </li>
+                  <li>Focus on Environment and Sustainability </li>
+                  <li>Partnership for optimized delivery</li>
                 </ul>
+                <p class="mt-2">ABN: 71 159 403219 </p>
                 </p>
 
                  <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm text-white border-white border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :to="'/about'">About Us</router-link>
-                  <router-link  class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm bg-blue-900 text-white ml-2 p-4 border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-white" :to="'/ourwork'">Our Work</router-link>
+                  <router-link  class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm bg-blue-900 text-white ml-2 p-4 border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-white" :to="'/ourexpertise'">Our Expertise</router-link>
                
               </div>
             </div>
-            <div class="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6 ">
+            <div class="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
             <div class="p-2 max-w-5xl grid-cols-4 grid gap-3 xs:grid-cols-5 xs:p-8 md:grid-cols-4 lg:gap-5">
-              <div class="md:col-span-2 col-span-2 "><img class="rounded-xl shadow-xl" src="https://images.unsplash.com/photo-1593313637552-29c2c0dacd35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzODI5OTc0OA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt=""></div>
-             <div class="col-span-2 flex justify-between flex-col">
-                <div class="col-span-2"><img class="rounded-xl shadow-xl" src="https://images.unsplash.com/photo-1534004766562-728e5c705ab0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NjU3MzExOA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt=""></div>
+              <div class="md:col-span-2 col-span-2 "><img class="rounded-xl shadow-xl" src="/src/assets/pic1.jpg" alt=""></div>
+             <div class="col-span-1 flex justify-between flex-col">
+                <div ><img class="rounded-xl shadow-xl" src="/src/assets/pic2.jpg" alt=""></div>
               
-              <div class="col-span-3"><img class="rounded-xl shadow-xl" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit" alt=""></div>
+              <div ><img class="rounded-xl shadow-xl" src="/src/assets/pic3.jpg" alt=""></div>
              </div>
     
    
@@ -119,6 +120,18 @@
         </div>
       </main>
   </div>
+   <div v-if="this.$route.name == 'partnership'">
+      <main class="mt-16 sm:mt-24">
+        <div class="mx-auto max-w-7xl">
+           <div class="relative mt-24 max-w-md mx-auto px-4 sm:max-w-3xl sm:mt-32 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Partnerships, Procurement & Logistics</h1>
+        <p class="mt-6 text-xl text-cyan-100 max-w-3xl"></p>
+      
+      </div>
+         
+        </div>
+      </main>
+  </div>
 
   <!-- contact us -->
   <div v-if="this.$route.name == 'contactus'">
@@ -145,8 +158,10 @@ import { ChevronRightIcon } from '@heroicons/vue/solid'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about' },
-  { name: ' Our Work', href: '/ourwork' },
+  { name: ' Our Expertise', href: '/ourexpertise' },
+  { name: 'Partnerships, Procurement & Logistics', href: '/partnership' },
   { name: 'Contact us', href: '/contactus' },
+  
 ]
 
 const home = 
@@ -154,7 +169,7 @@ const home =
         header: {
           bigTitle1: "Structural Civil Mining ",
           bigTitle2: "Engineering Services",
-          description: "ISRA  provides professional project services of:"
+          description: "Infrastructure and Buildings Consulting Firm"
         },
         about: {
           description: "Our Engineers have delivered in landmark project in Australia, New Zealand, South East Asia and the Pacific. "
@@ -162,7 +177,7 @@ const home =
 
         ourwork: {
           description:"",
-          header: "Our Work"
+          header: "Our Expertise"
         },
 
         contactus:{
