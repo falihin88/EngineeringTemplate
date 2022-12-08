@@ -19,15 +19,15 @@
             </a>
           </div>
         </div>
-        <div class="mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2 shadow-inner">
+        <div class="mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2">
           <div class="md:grid md:grid-cols-2 md:gap-8">
            
            
           </div>
           <div class="bg-white rounded-md ">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <h2 class="inline text-3xl font-extrabold tracking-tight text-gray-900 sm:block sm:text-4xl capitalize">Stay Up to date with our technology. </h2>
-      <p class="inline text-3xl font-extrabold tracking-tight text-blue-900 sm:block sm:text-4xl">Sign up for our newsletter.</p>
+      <h2 class="inline text-3xl font-extrabold tracking-tight text-gray-900 sm:block sm:text-4xl capitalize">Solutions for your engineering needs </h2>
+      <p class="inline text-3xl font-extrabold tracking-tight text-blue-900 sm:block sm:text-4xl">Contact us for free consultation</p>
       <div>
         <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm text-blue-900 border-blue-900 border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :to="'/contactus'">Contact us</router-link>
       </div>

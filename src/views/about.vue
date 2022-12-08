@@ -36,7 +36,7 @@
             </defs>
             <rect width="404" height="384" fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)" />
           </svg>
-          <img class=" relative rounded-md shadow-lg" src="https://images.unsplash.com/photo-1522775559573-2f76d540932b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzODM2NTcwMQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="">
+          <img class=" relative rounded-md shadow-lg" src="/src/assets/images/House5.jpg" alt="">
           
         </div>
       </div>
