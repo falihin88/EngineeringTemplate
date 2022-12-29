@@ -62,23 +62,26 @@
                   {{ ' ' }}
                   <span class="text-white md:block uppercase">{{home.header.bigTitle2}}</span>
                 </h1>
-                <p class="mt-3 text-base md:text-gray-100 text-gray-50sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light">{{home.header.description}}</p>
-                <p class="mt-3 text-base md:text-gray-100 text-gray-50sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light"> 
-                  <ul class=" list-disc ml-10">
+                <p class="mt-3 text-base md:text-gray-100 text-gray-50 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light">{{home.header.description}}</p>
+                <p class="mt-3 text-base  md:text-gray-100 text-gray-100 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl leading-tight font-light"> 
+                  <ul class="ml-10">
                   <li>Provision via digital technologies </li>
                   <li>Focus on Environment and Sustainability </li>
                   <li>Partnership for optimized delivery</li>
                 </ul>
                 <p class="mt-2">ABN: 71 159 403219 </p>
                 </p>
-
-                 <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm text-white border-white border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :to="'/about'">About Us</router-link>
+                <div class="mx-auto">
+                  <router-link class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm text-white border-white border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :to="'/about'">About Us</router-link>
                   <router-link  class="inline-flex items-center px-6 py-3 mt-10 border-transparent text-base font-medium rounded-full shadow-sm bg-blue-900 text-white ml-2 p-4 border-2 uppercase hover:bg-white focus:outline-none hover:text-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-white" :to="'/ourexpertise'">Our Expertise</router-link>
+                </div>
+                 
                
               </div>
             </div>
-            <div class="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
-            <div class="p-2 max-w-5xl grid-cols-4 grid gap-3 xs:grid-cols-5 xs:p-8 md:grid-cols-4 lg:gap-5">
+            <div class="mx-auto">
+              <div class="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
+            <div class="p-2 mx-auto max-w-5xl grid-cols-4 grid gap-3 xs:grid-cols-5 xs:p-8 md:grid-cols-4 lg:gap-5">
               <div class="md:col-span-2 col-span-2 "><img class="rounded-xl shadow-xl" src="/src/assets/pic1.jpg" alt=""></div>
              <div class="col-span-1 flex justify-between flex-col">
                 <div ><img class="rounded-xl shadow-xl" src="/src/assets/pic2.jpg" alt=""></div>
@@ -87,9 +90,11 @@
              </div>
     
    
-  </div>
+             </div>
              
             </div>
+            </div>
+            
           </div>
         </div>
       </main>
