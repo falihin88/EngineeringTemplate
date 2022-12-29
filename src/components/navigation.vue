@@ -79,7 +79,7 @@
                
               </div>
             </div>
-            <div class="mx-auto">
+            
               <div class="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
             <div class="p-2 mx-auto max-w-5xl grid-cols-4 grid gap-3 xs:grid-cols-5 xs:p-8 md:grid-cols-4 lg:gap-5">
               <div class="md:col-span-2 col-span-2 "><img class="rounded-xl shadow-xl" src="/src/assets/pic1.jpg" alt=""></div>
@@ -93,7 +93,7 @@
              </div>
              
             </div>
-            </div>
+            
             
           </div>
         </div>
